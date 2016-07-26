@@ -336,6 +336,7 @@ font-style: italic;
             
             	<div id="envVars">
             		The variable is: "#{ENV["PROPERTIES"]}"
+            	<p>
             		Another variable is: "#{ENV["prop1name"]}"
             	</div>
                 
