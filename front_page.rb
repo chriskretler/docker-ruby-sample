@@ -231,10 +231,13 @@ pre {
 </ol>
 <p>After you save your webhook, if you refresh your settings page you can see the status of the ping that Github sent to OpenShift to verify it can reach the server.</p>
 <p>Note: adding a webhook requires your OpenShift server to be reachable from GitHub.</p>
-                <h3>Working in your local Git repository</h3>
-                <p>If you forked the application from the OpenShift GitHub example, you'll need to manually clone the repository to your local system. Copy the application's source code Git URL and then run:</p>
 
-<p>After pushing changes, you'll need to manually trigger a build if you did not setup a webhook as described above.</p>
+
+			<h2>Health</h2>
+				<p>Application health can be monitored at <a href="./health">this url.</a></p>
+				
+				<p>This functionality can be stymied by clicking <a href="./health_hider">here.</a></p>
+ 
       </section>
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">

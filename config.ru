@@ -1,12 +1,21 @@
 require 'rack/lobster'
+require 'rack/urlmap'
 require './front_page'
 require './basic_questions'
+require './health_hider'
+require './health_backup'
+require './health'
 
 map '/health' do
-  health = proc do |env|
-    [200, { "Content-Type" => "text/html" }, ["1"]]
-  end
-  run health
+  run Health.new
+end
+
+map '/health_hider' do
+  run HealthHider.new
+end
+
+map '/health_broken' do
+  run HealthBackup.new
 end
 
 map '/lobster' do
