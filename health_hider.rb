@@ -4,6 +4,7 @@ require 'rack/rewrite'
 class HealthHider
 
 	def initialize()
+	
 	end
 
 	def call env
