@@ -8,7 +8,7 @@ RUN apk add --no-cache ruby ruby-rack
 #RUN apt-get update \ 
 #	&& apt-get install -y ruby ruby-rack
 
-RUN gem install -N rack-rewrite
+RUN gem install -N rack-rewrite rack-cache
 
 # create place for app to run from
 WORKDIR /app/

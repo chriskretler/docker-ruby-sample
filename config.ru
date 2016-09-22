@@ -1,10 +1,16 @@
 require 'rack/lobster'
 require 'rack/urlmap'
+require 'rack/cache'
 require './front_page'
 require './basic_questions'
 require './health_hider'
-require './health_backup'
 require './health'
+
+use Rack::Cache,
+  :verbose     => true,
+  :default_ttl => 1800,
+  :metastore   => 'file:/home/chris/rack/meta',
+  :entitystore => 'file:/home/chris/rack/body'
 
 map '/health' do
   run Health.new
@@ -12,10 +18,6 @@ end
 
 map '/health_hider' do
   run HealthHider.new
-end
-
-map '/health_broken' do
-  run HealthBackup.new
 end
 
 map '/lobster' do

@@ -9,14 +9,14 @@ class HealthHider
 
 	def call env
 	
-		#system "mv health.rb health_backup.rb"
-		system "sed -i s/HealthBackup/WasHealthBackup/g health_backup.rb"
+		#system "mv /home/rack/body/35 /home/rack/body/36"
+		system "sed -i s/1/10/g /home/chris/rack/body/35/6a192b7913b04c54574d18c28d46e6395428ab"
 		#Rack::URLMap.new({
 		#	'/health/broken' => 'health_backup.rb'
 		#})
 		#Rack::Rewrite.rewrite 'health',	'health_broken'
 	
-		[200, { "Content-Type" => "text/html" }, ["1"]]
+		[200, { "Content-Type" => "text/html" }, ["Health page cache has been modified."]]
 		
 	end
 	
