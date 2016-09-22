@@ -9,7 +9,8 @@ class HealthHider
 
 	def call env
 	
-		system "mv health.rb health-backup.rb"
+		#system "mv health.rb health_backup.rb"
+		system "sed -i s/HealthBackup/WasHealthBackup/g health_backup.rb"
 		#Rack::URLMap.new({
 		#	'/health/broken' => 'health_backup.rb'
 		#})

@@ -237,6 +237,10 @@ pre {
 				<p>Application health can be monitored at <a href="./health">this url.</a></p>
 				
 				<p>This functionality can be stymied by clicking <a href="./health_hider">here.</a></p>
+
+<script>
+	console.log(ENV['HOSTNAME'])
+</script>
  
       </section>
           </section>
