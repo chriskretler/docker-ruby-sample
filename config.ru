@@ -23,8 +23,6 @@ map '/lobster' do
 end
 
 map '/' do
-  myEnv = ENV['HOSTNAME']
-  puts "host name is: " #+ str(myEnv)
   run FrontPage.new
 end
 
