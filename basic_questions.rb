@@ -335,7 +335,7 @@ font-style: italic;
             <section>
             
             	<div id="envVars">
-            		The variable is: "#{ENV["PROPERTIES"]}"
+            		I am running in the following pod: "#{ENV["HOSTNAME"]}"
             	<p>
             		Another variable is: "#{ENV["env"]}"
             	</div>
