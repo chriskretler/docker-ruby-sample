@@ -238,9 +238,7 @@ pre {
 				
 				<p>This functionality can be stymied by clicking <a href="./health_hider">here.</a></p>
 
-<script>
-	console.log(ENV['HOSTNAME'])
-</script>
+				<p>When running in OpenShift, the pod name will display here: "#{ENV["HOSTNAME"]}"</p>
  
       </section>
           </section>

@@ -333,13 +333,7 @@ font-style: italic;
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
-            
-            	<div id="envVars">
-            		I am running in the following pod: "#{ENV["HOSTNAME"]}"
-            	<p>
-            		Another variable is: "#{ENV["env"]}"
-            	</div>
-                
+             
                 <footer>  
                   <a href="./">Return to the main page</a>
                 </footer>
