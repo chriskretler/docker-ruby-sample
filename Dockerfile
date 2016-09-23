@@ -14,6 +14,8 @@ RUN gem install -N rack-rewrite rack-cache
 WORKDIR /app/
 COPY . /app/
 
+RUN mkdir rack && chmod 664 rack
+
 # expose the port on which the app will run.
 EXPOSE 8080
 

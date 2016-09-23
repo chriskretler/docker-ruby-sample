@@ -9,8 +9,8 @@ require './health'
 use Rack::Cache,
   :verbose     => true,
   :default_ttl => 1800,
-  :metastore   => 'file:/app/cache/meta',
-  :entitystore => 'file:/app/cache/body'
+  :metastore   => 'file:/app/rack/meta',
+  :entitystore => 'file:/app/rack/body'
 
 map '/health' do
   run Health.new
