@@ -234,7 +234,7 @@ pre {
 
 
 			<h2>Health</h2>
-				<p>Application health can be monitored at <a href="./health">this url.</a></p>
+				<p>Howdy, application health can be monitored at <a href="./health">this url.</a></p>
 				
 				<p>This functionality can be stymied by clicking <a href="./health_hider">here.</a></p>
 
