@@ -1,20 +1,18 @@
-FROM alpine:3.3
-#FROM ubuntu:latest
+#FROM alpine:3.4
+FROM ubuntu:latest
 
 MAINTAINER Chris Kretler <ckretler@umich.edu>
 
 # Install ruby
-RUN apk add --no-cache ruby ruby-rack
-#RUN apt-get update \ 
-#	&& apt-get install -y ruby ruby-rack
+#RUN apk add --no-cache ruby ruby-rack
+RUN apt-get update \ 
+	&& apt-get install -y ruby ruby-rack
 
 RUN gem install -N rack-rewrite rack-cache
 
 # create place for app to run from
 WORKDIR /app/
 COPY . /app/
-
-RUN mkdir rack # && chmod 664 rack
 
 # expose the port on which the app will run.
 EXPOSE 8080

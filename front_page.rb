@@ -239,6 +239,8 @@ pre {
 				<p>This functionality can be stymied by clicking <a href="./health_hider">here.</a></p>
 
 				<p>When running in OpenShift, the pod name will display here: #{ENV["HOSTNAME"]}</p>
+				
+				<p>The value of the environmental variable called howdy is: #{ENV["howdy-value"]}</p>
  
       </section>
           </section>
