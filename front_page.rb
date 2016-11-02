@@ -240,7 +240,7 @@ pre {
 
 				<p>When running in OpenShift, the pod name will display here: #{ENV["HOSTNAME"]}</p>
 				
-				<p>The value of the environmental variable called howdy is: #{ENV["howdy-value"]}</p>
+				<p>The value of the environmental variable called howdy is: #{ENV["HOWDY_VALUE"]}</p>
  
       </section>
           </section>
