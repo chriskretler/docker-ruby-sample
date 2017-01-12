@@ -232,9 +232,10 @@ pre {
 
 			<h2>Application Health & Other Information</h2>
 <ol>
-	<li>Application health can be monitored at <a href="./health">this url. </a></li>
+	<li>Application health can be monitored at <a href="./health">this url</a>.</li>
 	<li>The server/pod name is: #{ENV["HOSTNAME"]}</li>		
-	<li>The value of the environmental variable is: #{ENV["ENVVAR"]}</li>
+	<li>The value of the ENVVAR variable is: #{ENV["ENVVAR"]}</li>
+	<li>The full list of headers sent to a subsequent request can be viewed <a href="./headers">here</a>.</li>
 </ol>
  
 			</section>
