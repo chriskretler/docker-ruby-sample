@@ -1,21 +1,26 @@
-#FROM alpine:3.4
 FROM ubuntu:latest
 
 MAINTAINER Chris Kretler <ckretler@umich.edu>
 
-# Install ruby
-#RUN apk add --no-cache ruby ruby-rack
+# Install ruby and necessary libraries for building thin.
 RUN apt-get update \ 
-	&& apt-get install -y ruby ruby-rack
+	&& apt-get install -y ruby ruby-rack ruby-dev build-essential
 
-RUN gem install -N rack-rewrite rack-cache
+# Install thin.
+RUN gem install -N thin
 
-# create place for app to run from
+# Expose the port on which the app will run.
+EXPOSE 3001
+
+# Set a sample environmental variable
+ENV ENVVAR howdy
+
+# Clean up build reqs that aren't necessary for deployment.
+RUN apt-get remove -y build-essential ruby-dev \
+	&& apt-get autoremove -y
+	
+# Create place for app to run from
 WORKDIR /app/
 COPY . /app/
 
-# expose the port on which the app will run.
-EXPOSE 8080
-
-CMD rackup --host 0.0.0.0 -p 8080
-#CMD /bin/sh
+CMD thin start -R config.ru -p 3001
