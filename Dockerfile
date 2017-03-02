@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:17.04
 
 MAINTAINER Chris Kretler <ckretler@umich.edu>
 
