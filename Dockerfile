@@ -1,9 +1,10 @@
-FROM ubuntu:16.04
+FROM debian:jessie-slim
+#FROM ubuntu:16.04
 
 MAINTAINER Chris Kretler <ckretler@umich.edu>
 
 # Install ruby and necessary libraries for building thin.
-RUN apt-get update \ 
+RUN apt-get update \
 	&& apt-get install -y ruby ruby-rack ruby-dev build-essential
 
 # Install thin.
