@@ -215,7 +215,7 @@ pre {
 
 
         <div class="row">
-          <section class='col-xs-12 col-sm-6 col-md-6' style="background-color: #FFC72B; color: #041E42">
+          <section class='col-xs-12 col-sm-6 col-md-6' style="background-color: #FFC721; color: #041E42">
             <section >
             
               <h2>Basic Questions</h2>
@@ -240,7 +240,7 @@ pre {
  
 			</section>
     	</section>
-          <section class="col-xs-12 col-sm-6 col-md-6" style="background-color: #FFC72B; color: #041E42">
+          <section class="col-xs-12 col-sm-6 col-md-6" style="background-color: #FFC721; color: #041E42">
 
                 <h2>Useful Commands</h2>
 
