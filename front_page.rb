@@ -208,14 +208,14 @@ pre {
 </head>
 <body>
 
-<section class='container' style="background-color: #FFC72C; color: #041E42">
+<section class='container' style="background-color: #FFA000; color: #041E42">
           <hgroup>
             <h1>Welcome to a Sample Application</h1>
           </hgroup>
 
 
         <div class="row">
-          <section class='col-xs-12 col-sm-6 col-md-6' style="background-color: #FF0000; color: #041E42">
+          <section class='col-xs-12 col-sm-6 col-md-6' style="background-color: #FFC72C; color: #041E42">
             <section >
             
               <h2>Basic Questions</h2>
