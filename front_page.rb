@@ -240,7 +240,7 @@ pre {
  
 			</section>
     	</section>
-          <section class="col-xs-12 col-sm-6 col-md-6" style="background-color: #FFC72C; color: #041E42">
+          <section class="col-xs-12 col-sm-6 col-md-6" style="background-color: #FF0000; color: #041E42">
 
                 <h2>Useful Commands</h2>
 
